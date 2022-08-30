@@ -1,0 +1,154 @@
+.watch-display {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.watch-display-point {
+  position: absolute;
+  background-color: #000;
+}
+
+.watch-display-point-0,
+.watch-display-point-15,
+.watch-display-point-30,
+.watch-display-point-45 {
+  width: 2px;
+  height: 6px;
+}
+
+.watch-display-point-5,
+.watch-display-point-10,
+.watch-display-point-20,
+.watch-display-point-25,
+.watch-display-point-35,
+.watch-display-point-40,
+.watch-display-point-50,
+.watch-display-point-55 {
+  width: 1px;
+  height: 5px;
+}
+
+.watch-display-point-0 {
+  top: -1px;
+  left: 59px;
+}
+
+.watch-display-point-5 {
+  top: 0;
+  right: 0;
+  transform: rotate(30deg) translateX(-20px) translateY(20px);
+}
+
+.watch-display-point-10 {
+  top: 0;
+  right: 0;
+  transform: rotate(60deg) translateX(21px) translateY(21px);
+}
+
+.watch-display-point-15 {
+  top: 59px;
+  right: 1px;
+  transform: rotate(90deg);
+}
+
+.watch-display-point-20 {
+  bottom: 0;
+  right: 0;
+  transform: rotate(-60deg) translateX(21px) translateY(-21px);
+}
+
+.watch-display-point-25 {
+  bottom: 0;
+  right: 0;
+  transform: rotate(-30deg) translateX(-21px) translateY(-21px);
+}
+
+.watch-display-point-30 {
+  bottom: 0;
+  left: 59px;
+}
+
+.watch-display-point-35 {
+  bottom: 0;
+  left: 0;
+  transform: rotate(30deg) translateX(21px) translateY(-21px);
+}
+
+.watch-display-point-40 {
+  bottom: 0;
+  left: 0;
+  transform: rotate(60deg) translateX(-20px) translateY(-21px);
+}
+
+.watch-display-point-45 {
+  left: 1px;
+  top: 59px;
+  transform: rotate(-90deg);
+}
+
+.watch-display-point-50 {
+  top: 0;
+  left: 0;
+  transform: rotate(-60deg) translateX(-22px) translateY(22px);
+}
+
+.watch-display-point-55 {
+  top: 0;
+  left: 0;
+  transform: rotate(-30deg) translateX(20px) translateY(21px);
+}
+
+.watch-arrow {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  display: block;
+  background-color: #000;
+}
+
+.watch-arrow-hour,
+.watch-arrow-minute {
+  width: 2px;
+}
+
+.watch-arrow-hour {
+  height: 20px;
+}
+
+.watch-arrow-minute {
+  height: 40px;
+}
+
+.watch-arrow-second {
+  width: 1px;
+  height: 50px;
+}
+
+.watch-arrow::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: none;
+}
+
+.watch-arrow-hour::before,
+.watch-arrow-minute::before {
+  top: -10px;
+  left: -3px;
+  border-bottom: 10px solid black;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.watch-arrow-second::before {
+  top: -4px;
+  left: -2px;
+  border-bottom: 4px solid black;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}

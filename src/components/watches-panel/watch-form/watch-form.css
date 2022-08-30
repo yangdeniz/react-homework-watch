@@ -1,0 +1,49 @@
+.watches-form {
+  display: grid;
+  grid-template-columns: repeat(2, 240px) 120px;
+  gap: 60px;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.watches-input {
+  width: 240px;
+}
+
+.watches-input label,
+.watches-form button {
+  font-weight: bold;
+}
+
+.watches-input label {
+  display: block;
+  padding: 10px 20px;
+}
+
+.watches-input input {
+  width: 220px;
+  padding: 10px;
+}
+
+.watches-input.invalid input {
+  border-color: #c60f0f;
+  color: #c60f0f;
+}
+
+.watches-input input,
+.watches-btn {
+  border: 2px solid black;
+}
+
+.watches-btn {
+  height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.watches-btn:hover {
+  background-color: #119400;
+  color: #fff;
+  border-color: #119400;
+}

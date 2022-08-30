@@ -1,0 +1,6 @@
+.watches-list {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  column-gap: 80px;
+  row-gap: 60px;
+}

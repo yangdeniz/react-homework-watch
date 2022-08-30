@@ -1,0 +1,40 @@
+.watch {
+  width: 120px;
+  text-align: center;
+}
+
+.watch-name {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.watch-time {
+  display: block;
+  margin-top: 10px;
+}
+
+.watch-item {
+  position: relative;
+}
+
+.watch-remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.watch-remove:hover {
+  border-color: #c60f0f;
+  color: #fff;
+  background-color: #c60f0f;
+}
